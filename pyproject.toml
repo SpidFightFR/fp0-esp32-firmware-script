@@ -1,0 +1,20 @@
+[project]
+name = "fp0-esp32-firmware-script"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SpidFightFR", email = "spidfight@swisscows.email" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "esptool>=5.6.0",
+    "ufbt>=0.2.6",
+]
+
+[project.scripts]
+fp0-esp32-firmware-script = "fp0_esp32_firmware_script:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
